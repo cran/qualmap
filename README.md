@@ -1,16 +1,20 @@
+
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-qualmap <img src="man/figures/qualmapLogo.png" align="right" />
-===============================================================
+
+# qualmap <img src="man/figures/qualmapLogo.png" align="right" />
 
 [![lifecycle](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
 [![Travis-CI Build
-Status](https://travis-ci.org/slu-openGIS/qualmap.svg?branch=master)](https://travis-ci.org/slu-openGIS/qualmap)
+Status](https://travis-ci.com/slu-openGIS/qualmap.svg?branch=master)](https://travis-ci.com/slu-openGIS/qualmap)
 [![AppVeyor Build
 Status](https://ci.appveyor.com/api/projects/status/github/slu-openGIS/qualmap?branch=master&svg=true)](https://ci.appveyor.com/project/chris-prener/qualmap)
 [![Coverage
 Status](https://img.shields.io/codecov/c/github/slu-openGIS/qualmap/master.svg)](https://codecov.io/github/slu-openGIS/qualmap?branch=master)
-[![DOI](https://zenodo.org/badge/122496910.svg)](https://zenodo.org/badge/latestdoi/122496910)
 [![CRAN\_status\_badge](http://www.r-pkg.org/badges/version/qualmap)](https://cran.r-project.org/package=qualmap)
+[![cran
+checks](https://cranchecks.info/badges/worst/qualmap)](https://cran.r-project.org/web/checks/check_results_qualmap.html)
+[![Downloads](http://cranlogs.r-pkg.org/badges/qualmap?color=brightgreen)](http://www.r-pkg.org/pkg/qualmap)
+[![DOI](https://zenodo.org/badge/122496910.svg)](https://zenodo.org/badge/latestdoi/122496910)
 
 The goal of `qualmap` is to make it easy to enter data from qualitative
 maps. `qualmap` provides a set of functions for taking qualitative GIS
@@ -20,8 +24,24 @@ contains some type of polygon features. For each area identified on the
 map, the id numbers of these polygons can be entered as vectors and
 transformed using `qualmap`.
 
-Motivation and Approach
------------------------
+## What is New in v0.2?
+
+Version v0.2 brings a number of changes:
+
+  - Add `qm_verify()` as a means for verifying data data previously
+    saved to disk prior to processing them with `qm_summarize()`
+  - Add second approach to producing counts using `qm_summarize()` that
+    returns counts of participants rather than counts of clusters
+    associated with each feature
+  - Remove the inclusion of the `COUNT` from what is returned with
+    `qm_create()`
+  - Ensure compatibility with the `dplyr` v1.0 release:
+      - `qm_create()` no longer adds a custom class
+      - instead, `qm_is_cluster()` can be used to check for the
+        appropriate characteristics of objects, but no longer checks the
+        class itself
+
+## Motivation and Approach
 
 Qualitative GIS outputs are notoriously difficult to work with because
 individuals’ conceptions of space can vary greatly from each other and
@@ -49,8 +69,15 @@ qualitative GIS with existing census and administrative data simple and
 straightforward, which in turn allows these data to be used as measures
 in spatial statistical models.
 
-Installation
-------------
+More details on the package and how it fits into the broader ecosystem
+of qualitative GIS are available in a [pre-print on
+SocArXiv](https://osf.io/preprints/socarxiv/p9qn5/). All data associated
+with the pre-print are also available on [Open Science
+Framework](https://osf.io/pxzuc/), and the code are available via [Open
+Science Framework](https://osf.io/pxzuc/) and
+[GitHub](http://github.com/PrenerLab/sketch_mapping/).
+
+## Installation
 
 ### Installing Dependencies
 
@@ -79,10 +106,9 @@ package:
 remotes::install_github("slu-openGIS/qualmap")
 ```
 
-Usage
------
+## Usage
 
-`qualmap` implements six verbs for working with mental map data:
+`qualmap` implements six primary verbs for working with mental map data:
 
 1.  `qm_define()` - create a vector of feature id numbers that
     constitute a single “cluster”
@@ -102,9 +128,8 @@ The [primary
 vignette](https://slu-openGIS.github.io/qualmap/articles/qualmap.html)
 contains an overview of the workflow for implementing these functions.
 
-Contributor Code of Conduct
----------------------------
+## Contributor Code of Conduct
 
 Please note that this project is released with a [Contributor Code of
-Conduct](.github/CODE_OF_CONDUCT.md). By participating in this project
-you agree to abide by its terms.
+Conduct](https://slu-opengis.github.io/qualmap/CODE_OF_CONDUCT.html). By
+participating in this project you agree to abide by its terms.

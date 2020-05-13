@@ -9,33 +9,29 @@ test_clusterE2 <- qm_define("118600", "119101", "119300")
 test_sf <- stLouis
 test_sf <- dplyr::mutate(test_sf, TRACTCE = as.numeric(TRACTCE))
 
-test_tbl <- as_tibble(data.frame(
+test_tbl <- dplyr::tibble(
   x = c(1,2,3),
   y = c("a", "b", "a")
-))
+)
 
-test_tbl2 <- as_tibble(data.frame(
+test_tbl2 <- dplyr::tibble(
   RID = c(1,1,1),
   CID = c(1,1,1),
   CAT = c("positive", "positive", "positive"),
-  TRACTCE = c(119300, 118600, 119101),
-  COUNT = c(1,1,1),
-  stringsAsFactors = FALSE
-))
+  TRACTCE = c(119300, 118600, 119101)
+)
 
 test_tbl2 %>%
   dplyr::mutate(RID = as.integer(RID)) %>%
   dplyr::mutate(CID = as.integer(CID)) -> test_tbl2
 
-test_tbl3 <- as_tibble(data.frame(
+test_tbl3 <- dplyr::tibble(
   RID = c(1,1,1),
   CID = c(1,1,1),
   CAT = c("positive", "positive", "positive"),
   TRACTCE = c(119300, 118600, 119101),
-  COUNT = c(1,1,1),
-  NAME = c("1193", "1186", "1191.01"),
-  stringsAsFactors = FALSE
-))
+  NAME = c("1193", "1186", "1191.01")
+)
 
 test_tbl3 %>%
   dplyr::mutate(RID = as.integer(RID)) %>%
@@ -128,7 +124,7 @@ objV1 <- qm_is_cluster(resultV1)
 objV2 <- qm_is_cluster(resultV2)
 objV3 <- qm_is_cluster(resultV3)
 
-test_that("result objects have class qm_culster", {
+test_that("result objects have have the correct characteristics", {
   expect_equal(objV1, TRUE)
   expect_equal(objV2, TRUE)
   expect_equal(objV3, TRUE)

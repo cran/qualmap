@@ -3,7 +3,6 @@
 \docType{package}
 \name{qualmap}
 \alias{qualmap}
-\alias{qualmap-package}
 \title{qualmap: Opinionated Approach for Digitizing Semi-structured Qualitative GIS Data}
 \description{
 Provides a set of functions for taking qualitative GIS data, hand drawn on a map, and
@@ -63,5 +62,5 @@ Useful links:
 }
 }
 \author{
-\strong{Author and Maintainer:} Christopher Prener, Ph.D. \href{chris.prener@slu.edu}{chris.prener@slu.edu}
+\strong{Author and Maintainer:} Christopher Prener, Ph.D.
 }
