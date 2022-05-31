@@ -1,6 +1,6 @@
-b58fa041dcddb2d5a87d1bc807b57752 *DESCRIPTION
+6dd87b928efa255bdcf1f5c6b078a9ac *DESCRIPTION
 e85c43bc548a6eb049921ab9a4d1fb35 *NAMESPACE
-d7f0483304128eb519e7d6986ec97a0a *NEWS.md
+12c8aecc3edaad876794e30a323db20a *NEWS.md
 55b14a1219dcaa6d6db499be1e193780 *R/qm_combine.R
 02f74ee9d649aa9d72f8b2a6361b76ea *R/qm_create.R
 8381e3ea0aa9ddcab102721984866e92 *R/qm_define.R
@@ -9,14 +9,15 @@ d4968ff2d48d8d3169e540b71d5b0741 *R/qm_preview.R
 f2fcda1db059b993de9f2ea9bf1c4561 *R/qm_summarize.R
 7f4a327a1ff1fb07d9ab2d69f70fd15c *R/qm_validate.R
 5c6cc6b660493012971b13eab91567de *R/qm_verify.R
-8e20cb23dae0559bbd627bdd3772ac1f *R/qualmap-package.R
+a932da337c2894521d4cb8dfbf32cddc *R/qualmap-package.R
 9b3553aa03c252cae0dbba197d5c7ef2 *R/stLouis.R
-fa9679798df88bdd74d666ab905fcf86 *README.md
-d694b9e9427a49b97a5495c1ff538926 *build/vignette.rds
+861af4c2ab2134f7ff811243bba82f73 *README.md
+9ebef1c3f9d5e5e23dadf92f1802053b *build/vignette.rds
 0cdc74dea7276eac980cfc2b9b0a9b1c *data/stLouis.rda
-1a806765e4e929553fdae5296d02cafa *inst/doc/qualmap.R
-dfb92487da808c0a2b90ad1c5fd2c08f *inst/doc/qualmap.Rmd
-baa6237fb2f1fc6bce1c6e13b5478a4c *inst/doc/qualmap.html
+5d570819aa28bca0e7fecb73f603004b *inst/CITATION
+46750e778a5cdb4d65c347f8e43df623 *inst/doc/qualmap.R
+841b336804d3f7c8f4d99ed76c02058f *inst/doc/qualmap.Rmd
+28ba3fdce3583ae1f2316eddf26980ee *inst/doc/qualmap.html
 3a486efcd59ab89117c4b94e1937e305 *inst/extdata/create_stlData.R
 ebf375863665a0df42515ebf48fde3ca *inst/extdata/testWorkflow.R
 2d3ebb1b53f15ddf6f4542c826cd883b *inst/extdata/workflow.R
@@ -29,7 +30,7 @@ e9a9940bd1c6d76348beac1c7e295a07 *man/qm_preview.Rd
 4187efbd4358b309b9d591460eafa2d2 *man/qm_summarize.Rd
 4ffcb63fb9d328452c882a440bbb6ed7 *man/qm_validate.Rd
 e8a5d67273e07355609366409ae1b1bb *man/qm_verify.Rd
-70451f11ed9ca2f9740c2194ee2ca936 *man/qualmap.Rd
+4bebfe872e9efd14e19dc2fc79d5060f *man/qualmap.Rd
 0b8bd161b1470f41a9e7cfb4d5c9cea1 *man/stLouis.Rd
 0f6f815607e6448f20c6d2abc07c420b *tests/testthat.R
 4c0f22a53e7e25495f3aa0c66bfd8ed3 *tests/testthat/test_1_qm_define.R
@@ -40,4 +41,4 @@ ab4e21bedd78aeda31865813b646985a *tests/testthat/test_3_qm_preview.R
 ea8b1775ae6fad9ce4ccba7517ee20f5 *tests/testthat/test_6_qm_summarize.R
 a2f1c62270dd618142f4bc704005a10e *vignettes/exampleMap.png
 46d5d5ee80d3aca3db196ebd57c4e174 *vignettes/previewMap.png
-dfb92487da808c0a2b90ad1c5fd2c08f *vignettes/qualmap.Rmd
+841b336804d3f7c8f4d99ed76c02058f *vignettes/qualmap.Rmd

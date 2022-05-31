@@ -4,7 +4,3 @@ knitr::opts_chunk$set(
   comment = "#>"
 )
 
-## ---- eval = FALSE------------------------------------------------------------
-#  # install.packages("remotes")
-#  remotes::install_github("slu-openGIS/qualmap")
-
