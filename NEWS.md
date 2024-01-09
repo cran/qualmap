@@ -1,3 +1,10 @@
+# qualmap 0.2.2
+
+* Change the minimum required version of `R` to v3.6 due to dependencies no longer being available for v3.5
+* Update CI workflow
+* Update unit testing to accommodate changes in `sf`
+* Change package-level help file 
+
 # qualmap 0.2.1
 
 * Change the minimum required version of `R` to v3.5
